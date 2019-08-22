@@ -1,0 +1,255 @@
+<html>
+  <head>
+    <style>
+      @keyframes rotate {
+        0%,
+        100% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(-6deg);
+        }
+      }
+      @keyframes swing {
+        0%,
+        100% {
+          transform: translateX(20px);
+        }
+        50% {
+          transform: translateX(-20px);
+        }
+      }
+      @keyframes shirt-move {
+        0%,
+        100% {
+          transform: rotate(-2deg);
+        }
+        50% {
+          transform: rotate(2deg);
+        }
+      }
+      @keyframes pants-move {
+        0%,
+        100% {
+          transform: rotate(2deg);
+        }
+        50% {
+          transform: rotate(-2deg);
+        }
+      }
+
+      #box {
+        margin-left: 100px;
+        position: relative;
+        margin-top: -150px;
+        height: 1300px;
+      }
+      #head {
+        position: absolute;
+        width: 400px;
+      }
+      #top {
+        position: absolute;
+        animation: rotate 2s 0s infinite ease-in-out;
+        width: 400px;
+        height: 400px;
+        top: 290px;
+        left: 30px;
+      }
+      #left-arm {
+        position: absolute;
+        width: 120px;
+        top: 600px;
+        z-index: 11;
+        animation: swing 2s 0s infinite ease-in-out;
+      }
+      #right-arm {
+        width: 120px;
+        position: absolute;
+        top: 640px;
+        z-index: 12;
+        left: 260px;
+        animation: swing 2s 0s infinite ease-in-out;
+      }
+      #hat {
+        position: absolute;
+        width: 400px;
+        top: -240px;
+        left: -40px;
+        transform: rotate(10deg);
+      }
+      #pants {
+        position: absolute;
+        top: 920px;
+        width: 400px;
+        z-index: 10;
+        animation: pants-move 2s 0s infinite ease-in-out;
+      }
+      #shirt {
+        position: absolute;
+        top: 600px;
+        width: 400px;
+        animation: shirt-move 2s 0s infinite ease-in-out;
+      }
+      #meh {
+        font-size: 40px;
+      }
+      #title {
+        font-size: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title">That'll look wonderful: 🦄</h1>
+    <div id="box">
+      <img src="assets/left-arm.png" id="left-arm" />
+      <img src="assets/right-arm.png" id="right-arm" />
+
+      <div id="top">
+        <img src="assets/head.png" id="head" /><svg
+          id="hat"
+          xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+          xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+          xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 64 80"
+          enable-background="new 0 0 64 64"
+          xml:space="preserve"
+        >
+          <metadata>
+            <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+              <slices></slices>
+              <sliceSourceBounds
+                height="16384"
+                width="16389"
+                x="-8165"
+                y="-8160"
+                bottomLeftOrigin="true"
+              ></sliceSourceBounds>
+            </sfw>
+          </metadata>
+          <g>
+            <g>
+              <rect x="19" y="29" width="26" height="2"></rect>
+              <path d="M45,24c0-2.24-4.61-9-13-9s-13,6.76-13,9v3h26V24z"></path>
+              <path
+                d="M57.494,42.33C57.322,40.762,56.072,37,54,37c-3.025,0-7.348-1.229-9-1.733V33H19v2.278C17.421,35.786,13.304,37,10,37    c-2.073,0-3.323,3.762-3.495,5.33c-0.229,2.081,0.817,2.544,1.278,2.646C17.194,47.067,24.663,48,32,48    c7.338,0,14.807-0.933,24.217-3.023C56.677,44.874,57.723,44.411,57.494,42.33z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <svg
+        id="pants"
+        xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+        xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+        xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        x="0px"
+        y="0px"
+        viewBox="0 0 64 64"
+        enable-background="new 0 0 64 64"
+        xml:space="preserve"
+      >
+        <metadata>
+          <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+            <slices></slices>
+            <sliceSourceBounds
+              height="16384"
+              width="16389"
+              x="-8165"
+              y="-8160"
+              bottomLeftOrigin="true"
+            ></sliceSourceBounds>
+          </sfw>
+        </metadata>
+        <g>
+          <g>
+            <path
+              d="M51,11H33.388l1.561,4.684c0.175,0.524-0.108,1.09-0.632,1.265C34.211,16.984,34.104,17,34,17    c-0.419,0-0.809-0.265-0.948-0.684l-0.915-2.742l-1.167,4.668C30.856,18.697,30.449,19,30.001,19c-0.081,0-0.162-0.009-0.244-0.03    c-0.536-0.134-0.861-0.677-0.728-1.213L30.719,11H13.002l0.002,4.905l-4,42c-0.026,0.28,0.066,0.559,0.256,0.768    C9.45,58.881,9.718,59,10,59h18c0.498,0,0.919-0.366,0.99-0.858L32,37.071l3.01,21.07C35.08,58.634,35.502,59,36,59h18    c0.281,0,0.551-0.119,0.74-0.327c0.189-0.209,0.282-0.487,0.255-0.768L51,16V11z"
+            ></path>
+            <path
+              d="M51,9V6c0-0.552-0.447-1-1-1H14c-0.552,0-1,0.448-1,1l0.001,3H51z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+
+      <svg
+        id="shirt"
+        xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+        xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+        xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+        x="0px"
+        y="0px"
+        viewBox="0 0 64 80"
+        enable-background="new 0 0 64 64"
+        xml:space="preserve"
+      >
+        <metadata>
+          <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+            <slices></slices>
+            <sliceSourceBounds
+              height="16384"
+              width="16389"
+              x="-8165"
+              y="-8160"
+              bottomLeftOrigin="true"
+            ></sliceSourceBounds>
+          </sfw>
+        </metadata>
+        <g>
+          <path
+            d="M58.124,9.008l-16-2C42.083,7.002,42.041,7,42,7h-2c-0.553,0-1,0.448-1,1c0,3.86-3.141,7-7,7c-3.86,0-7-3.14-7-7   c0-0.552-0.448-1-1-1h-2c-0.042,0-0.083,0.002-0.124,0.008l-16,2C5.375,9.07,5,9.496,5,10v12c0,0.552,0.448,1,1,1h9v35   c0,0.553,0.448,1,1,1h32c0.553,0,1-0.447,1-1V23h9c0.553,0,1-0.448,1-1V10C59,9.496,58.624,9.07,58.124,9.008z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+
+    <a href="javascript:location.reload(true)" id="meh">Meh.</a>
+
+    <script>
+      var colors = [
+        '#F44336',
+        '#E91E63',
+        '#9C27B0',
+        '#673AB7',
+        '#3F51B5',
+        '#2196F3',
+        '#03A9F4',
+        '#00BCD4',
+        '#009688',
+        '#4CAF50',
+        '#8BC34A',
+        '#CDDC39',
+        '#FFEB3B',
+        '#FFC107',
+        '#FF9800',
+        '#FF5722',
+        '#795548',
+        '#9E9E9E',
+        '#607D8B',
+        '#222222'
+      ]
+
+      function randomColor() {
+        return colors[Math.floor(Math.random() * colors.length)]
+      }
+
+      document.getElementById('hat').style.fill = randomColor()
+      document.getElementById('shirt').style.fill = randomColor()
+      document.getElementById('pants').style.fill = randomColor()
+    </script>
+  </body>
+</html>
